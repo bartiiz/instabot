@@ -171,8 +171,9 @@ class Bot(object):
         verbosity=True,
         device=None,
         save_logfile=True,
+        log_filename=None,
     ):
-        self.api = API(device=device, base_path=base_path, save_logfile=save_logfile)
+        self.api = API(device=device, base_path=base_path, save_logfile=save_logfile, Log_filename=log_filename)
         self.base_path = base_path
 
         self.total = {
